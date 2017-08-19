@@ -1,8 +1,9 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Prototypster";
   src: url("../fonts/prototypster-medium-webfont.eot") format("eot"), url("../fonts/prototypster-medium-webfont.svg") format("svg"), url("../fonts/prototypster-medium-webfont.ttf") format("truetype"), url("../fonts/prototypster-medium-webfont.woff") format("woff"), url("../fonts/prototypster-Medium.otf") format("otf"), url("../fonts/prototypsterMedium.eot") format("eot"), url("../fonts/PrototypsterMedium.svg") format("svg"), url("../fonts/PrototypsterMedium.ttf") format("truetype"), url("../fonts/PrototypsterMedium.woff") format("woff");
-  font-weight: 500;
-  font-style: medium; }
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: "Tahoma";
@@ -11,12 +12,13 @@
 
 html, body {
   max-width: 1024px;
-  margin: 0;
+  margin: 0 auto;
   background: url("../img/background.png");
   color: #2a2a2a; }
 
 .content {
-  max-width: 1024px;
+  max-width: 768px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -69,9 +71,8 @@ html, body {
       text-transform: uppercase;
       font-family: "Prototypster";
       font-size: 24px;
-      color: #b8b8b8; }
-    .content__order a:hover {
-      color: #ff5e42; }
+      color: #b8b8b8;
+      text-align: left; }
     .content__order-about img {
       width: 100%;
       height: 180px;
@@ -80,13 +81,15 @@ html, body {
     .content__order-about h2 {
       font-family: "Prototypster";
       margin: 10px 0px;
-      font-weight: 500;
-      font-style: medium; }
+      font-weight: normal;
+      font-style: normal;
+      text-transform: uppercase; }
     .content__order-about h3 {
       font-family: "Tahoma";
       font-weight: 400;
-      font-size: 13px; }
-    .content__order-info p {
+      font-size: 13px;
+      margin-bottom: 20px; }
+    .content__order-about p {
       font-family: "Tahoma";
       font-weight: 400;
       font-size: 13px;
@@ -98,3 +101,13 @@ html, body {
     padding: 3px 3px 16px 3px;
     -webkit-box-shadow: none;
             box-shadow: none; }
+  .content__order:hover a {
+    text-align: center; }
+  .content__order:hover span {
+    display: none; }
+  .content__order:hover a:before {
+    content: "+ Добавить в магазин";
+    color: #ff5e42;
+    position: relative; }
+  .content__order:hover a:hover:before {
+    text-decoration: underline; }

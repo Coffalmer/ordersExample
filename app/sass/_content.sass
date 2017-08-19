@@ -1,5 +1,6 @@
 .content
-    max-width: 1024px
+    max-width: 768px
+    margin: 0 auto
     display: flex
     flex-direction: row
     flex-wrap: wrap
@@ -26,9 +27,7 @@
             font-family: "Prototypster"
             font-size: 24px
             color: $colorInactive
-
-        a:hover
-            color: $colorActive
+            text-align: left
 
         &-about
 
@@ -40,16 +39,16 @@
             h2
                 font-family: "Prototypster"
                 margin: 10px 0px
-                font-weight: 500
-                font-style: medium
+                font-weight: normal
+                font-style: normal
+                text-transform: uppercase
 
             h3
                 font-family: "Tahoma"
                 font-weight: 400
                 font-size: 13px
+                margin-bottom: 20px
 
-        &-info
-            
             p
                 font-family: "Tahoma"
                 font-weight: 400
@@ -66,3 +65,16 @@
         padding: 3px 3px 16px 3px
         box-shadow: none
 
+    &__order:hover a
+        text-align: center
+
+    &__order:hover span
+        display: none
+
+    &__order:hover a:before
+        content: "+ Добавить в магазин"
+        color: $colorActive
+        position: relative
+
+    &__order:hover a:hover:before
+        text-decoration: underline
