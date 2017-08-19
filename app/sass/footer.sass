@@ -1,0 +1,79 @@
+.footer
+    background: url('../img/footerBackground.png')
+    background-repeat: no-repeat
+    background-size: cover
+    width: 100%
+    padding: 50px 0
+
+    &__container
+        max-width: 1024px
+        margin: 0 auto
+
+    &__content
+        width: 400px
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+        justify-content: flex-end
+    
+        a
+            font-family: "Prototypster"
+            text-transform: uppercase
+            text-decoration: none
+            color: #ff5e42
+            font-size: 36px
+            text-align: right
+
+
+        a:hover
+            text-decoration: underline
+
+
+        &-email
+            text-align: right
+        
+            label
+                font-family: "Prototypster"
+                text-transform: uppercase
+                color: #ffffff
+                font-size: 14px
+                margin-right: 20px
+
+            input[type="email"]
+                border-radius: 5px
+                padding: 10px 7px
+                width: calc(210px - 14px)
+                font-family: "Prototypster"
+                color: #2a2a2a
+                text-transform: uppercase
+
+        &-checkbox
+            margin: 20px 0
+            text-align: right
+
+            label
+                font-family: "Prototypster"
+                text-transform: uppercase
+                color: #ffffff
+                display: block
+                font-size: 18px
+                padding-right: 10px
+                padding-left: 45px
+                height: 30px
+                line-height: 30px
+            
+            input[type="checkbox"]
+                opacity: 0
+                position: absolute
+                height: 30px
+                width: 30px
+                z-index: 2
+
+                + label
+                    background: url('../img/checkbox.png') no-repeat
+                    display: inline-block
+                    z-index: 1
+
+                &:checked + label
+                    background: url('../img/checkboxActive.png') no-repeat
+                    display: inline-block

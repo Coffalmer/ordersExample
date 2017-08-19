@@ -1,0 +1,80 @@
+.footer {
+  background: url("../img/footerBackground.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  width: 100%;
+  padding: 50px 0; }
+  .footer__container {
+    max-width: 1024px;
+    margin: 0 auto; }
+  .footer__content {
+    width: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .footer__content a {
+      font-family: "Prototypster";
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ff5e42;
+      font-size: 36px;
+      text-align: right; }
+    .footer__content a:hover {
+      text-decoration: underline; }
+    .footer__content-email {
+      text-align: right; }
+      .footer__content-email label {
+        font-family: "Prototypster";
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 14px;
+        margin-right: 20px; }
+      .footer__content-email input[type="email"] {
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        padding: 10px 7px;
+        width: -webkit-calc(210px - 14px);
+        width: calc(210px - 14px);
+        font-family: "Prototypster";
+        color: #2a2a2a;
+        text-transform: uppercase; }
+    .footer__content-checkbox {
+      margin: 20px 0;
+      text-align: right; }
+      .footer__content-checkbox label {
+        font-family: "Prototypster";
+        text-transform: uppercase;
+        color: #ffffff;
+        display: block;
+        font-size: 18px;
+        padding-right: 10px;
+        padding-left: 45px;
+        height: 30px;
+        line-height: 30px; }
+      .footer__content-checkbox input[type="checkbox"] {
+        opacity: 0;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        z-index: 2; }
+        .footer__content-checkbox input[type="checkbox"] + label {
+          background: url("../img/checkbox.png") no-repeat;
+          display: inline-block;
+          z-index: 1; }
+        .footer__content-checkbox input[type="checkbox"]:checked + label {
+          background: url("../img/checkboxActive.png") no-repeat;
+          display: inline-block; }
