@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Orders Examples</title>
 </head>
@@ -15,10 +15,10 @@
         </div>
         <div class="header__button">
             <span>Сортировать:</span>
-            <button>по дате <i class="fa fa-sort-desc click" aria-hidden="true"></i>
+            <button class="inactive">по дате
 </button>
             <span>|</span>
-            <button>по готовности <i class="fa fa-sort-desc click" aria-hidden="true"></i>
+            <button class="inactive">по готовности
 </button>
         </div>
     </div>
@@ -26,17 +26,20 @@
         <div class="content__order">    
             <div class="content__order-about">
                 <img src="img/orderImage.png" alt="order">
+                <div class="content__order-text">
                 <h2>Название заказа</h2>
-                <h3>Статус: в печати</h3>
-                <p>Загружен: 11.04.13</p>
-                <p>Фотополимер покрашенный</p>
-                <p>Количество экземпляров: 1</p>
+                    <h3>Статус: в печати</h3>
+                    <p>Загружен: 11.04.13</p>
+                    <p>Фотополимер покрашенный</p>
+                    <p>Количество экземпляров: 1</p>
             </div>
+                </div>
             <a href="#"><span>Выполнен на 60%</span></a>
         </div>
         <div class="content__order">
             <div class="content__order-about">
                 <img src="img/orderImage.png" alt="order">
+                <div class="content__order-text">
                 <h2>Название заказа</h2>
                 <h3>Статус: отправлен</h3>
                 <p>Загружен: 11.04.13</p>
@@ -44,6 +47,7 @@
                 <p>Количество экземпляров: 1</p>
                 <p>Цвет: черный</p>
                 <p>Размер: 160 x 70</p>
+                </div>
             </div>
             <a href="#"><span>Выполнен на 60%</span></a>
         </div>
@@ -51,41 +55,48 @@
             <i class="fa fa-star" aria-hidden="true"></i>
             <div class="content__order-about">
                 <img src="img/orderImage.png" alt="order">
+                <div class="content__order-text">
                 <h2>Название заказа</h2>
                 <h3>Статус: в Моем магазине</h3>
                 <p>Загружен: 11.04.13</p>
                 <p>Фотополимер покрашенный</p>
                 <p>Количество экземпляров: 1</p>
+                </div>
             </div>
             <a href="#"><span>Выполнен на 60%</span></a>
         </div>
         <div class="content__order">    
             <div class="content__order-about">
                 <img src="img/orderImage.png" alt="order">
+                    <div class="content__order-text">
+                    <h2>Название заказа</h2>
+                    <h3>Статус: в печати</h3>
+                    <p>Загружен: 11.04.13</p>
+                    <p>Фотополимер покрашенный</p>
+                    <p>Количество экземпляров: 1</p>
+                    <p>Фотополимер покрашенный</p>
+                    <p>Количество экземпляров: 1</p>
+                </div>
+            </div>
+            <a href="#"><span>Выполнен на 60%</span></a>
+        </div>
+        <div class="content__order">    
+            <div class="content__order-about">
+                <img src="img/orderImage.png" alt="order">
+                <div class="content__order-text">
                 <h2>Название заказа</h2>
                 <h3>Статус: в печати</h3>
                 <p>Загружен: 11.04.13</p>
                 <p>Фотополимер покрашенный</p>
                 <p>Количество экземпляров: 1</p>
-                <p>Фотополимер покрашенный</p>
-                <p>Количество экземпляров: 1</p>
+                </div>
             </div>
             <a href="#"><span>Выполнен на 60%</span></a>
         </div>
         <div class="content__order">    
             <div class="content__order-about">
                 <img src="img/orderImage.png" alt="order">
-                <h2>Название заказа</h2>
-                <h3>Статус: в печати</h3>
-                <p>Загружен: 11.04.13</p>
-                <p>Фотополимер покрашенный</p>
-                <p>Количество экземпляров: 1</p>
-            </div>
-            <a href="#"><span>Выполнен на 60%</span></a>
-        </div>
-        <div class="content__order">    
-            <div class="content__order-about">
-                <img src="img/orderImage.png" alt="order">
+                <div class="content__order-text">
                 <h2>Название заказа</h2>
                 <h3>Статус: отправлен</h3>
                 <p>Загружен: 11.04.13</p>
@@ -93,6 +104,7 @@
                 <p>Количество экземпляров: 1</p>
                 <p>Цвет: черный</p>
                 <p>Размер: 160 x 70</p>
+                </div>
             </div>
             <a href="#"><span>Выполнен на 60%</span></a>
         </div>
@@ -127,8 +139,8 @@
     </script>
 
     <script>
-    $('.click').click(function() {
-    $(this).toggleClass("fa-sort-desc fa-sort-asc");
+    $('button').click(function() {
+    $(this).toggleClass("active inactive");
 });
     </script>
 
