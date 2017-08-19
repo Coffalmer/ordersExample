@@ -15,9 +15,11 @@
         </div>
         <div class="header__button">
             <span>Сортировать:</span>
-            <a href="#">по дате</a>
+            <button>по дате <i class="fa fa-sort-desc click" aria-hidden="true"></i>
+</button>
             <span>|</span>
-            <a href="#">по готовности</a>
+            <button>по готовности <i class="fa fa-sort-desc click" aria-hidden="true"></i>
+</button>
         </div>
     </div>
     <div class="content">
@@ -121,6 +123,12 @@
     $('.top').click(function(){
        $('html, body').animate({scrollTop:20}, 'slow');
    });
+});
+    </script>
+
+    <script>
+    $('.click').click(function() {
+    $(this).toggleClass("fa-sort-desc fa-sort-asc");
 });
     </script>
 
