@@ -9,7 +9,17 @@
     <title>Orders Examples</title>
 </head>
 <body>
-    <div class="header"></div>
+    <div class="header">
+        <div class="header__logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="header__button">
+            <span>Сортировать:</span>
+            <a href="#">по дате</a>
+            <span>|</span>
+            <a href="#">по готовности</a>
+        </div>
+    </div>
     <div class="content">
         <div class="content__order">    
             <div class="content__order-about">
@@ -86,7 +96,7 @@
         </div>
     </div>
     <div class="button">
-        <a href="#">Наверх</a>
+        <a href="#top" class="top">Наверх</a>
     </div>
     <div class="footer">
         <div class="footer__container">
@@ -103,5 +113,16 @@
         </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script>
+    $(function() {
+    $('.top').click(function(){
+       $('html, body').animate({scrollTop:20}, 'slow');
+   });
+});
+    </script>
+
 </body>
 </html>

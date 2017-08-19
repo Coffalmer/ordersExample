@@ -15,8 +15,50 @@ html, body {
   background: url("../img/background.png");
   color: #2a2a2a; }
 
+.header {
+  padding: 50px 0 30px 0; }
+  .header__logo {
+    text-align: center; }
+  .header__button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px; }
+    .header__button span {
+      color: #2a2a2a;
+      font-size: 14px;
+      font-family: "Tahoma"; }
+    .header__button a {
+      color: #ff5e42;
+      font-family: "Tahoma";
+      font-size: 14px;
+      text-decoration: none;
+      border-bottom: 1px dashed transparent;
+      margin: 0 5px; }
+    .header__button a:hover:after {
+      border-bottom: 1px dashed #ff5e42; }
+    .header__button a:active:after {
+      content: "\f063";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit; }
+
 .content {
-  max-width: 1024px;
+  max-width: 768px;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
