@@ -1,0 +1,68 @@
+.content
+    max-width: 1024px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+
+    &__order
+        width: calc(220px - 14px)
+        min-height: 430px
+        background-color: $whiteColor
+        margin: 20px 11px
+        padding: 7px 7px 20px 7px
+        border-radius: 5px
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+        justify-content: space-between
+        box-shadow: inset 0 1px 1px -1px $blackColor
+
+        a
+            text-decoration: none
+            text-transform: uppercase
+            font-family: "Prototypster"
+            font-size: 24px
+            color: $colorInactive
+
+        a:hover
+            color: $colorActive
+
+        &-about
+
+            img
+                width: 100%
+                height: 180px
+                object-fit: cover
+
+            h2
+                font-family: "Prototypster"
+                margin: 10px 0px
+                font-weight: 500
+                font-style: medium
+
+            h3
+                font-family: "Tahoma"
+                font-weight: 400
+                font-size: 13px
+
+        &-info
+            
+            p
+                font-family: "Tahoma"
+                font-weight: 400
+                font-size: 13px
+                margin: 5px 0
+
+
+        &-favorite
+
+
+    &__order:hover
+        border: 4px solid $colorActive
+        box-sizing: content-box
+        padding: 3px 3px 16px 3px
+        box-shadow: none
+
