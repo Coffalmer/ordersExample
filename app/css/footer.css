@@ -35,6 +35,10 @@
       text-align: right; }
     .footer__content a:hover {
       text-decoration: underline; }
+    @media screen and (max-width: 500px) {
+      .footer__content {
+        width: auto;
+        margin-right: 20px; } }
     .footer__content-email {
       text-align: right; }
       .footer__content-email label {
